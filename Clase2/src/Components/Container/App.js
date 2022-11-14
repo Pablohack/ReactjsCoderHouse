@@ -1,5 +1,5 @@
 import './App.css';
-import Title from './Components/Title/Title'
+import Title from '../Title/Title'
 
 function App() {
   const lists =["God of war", "GTA V", "Resident Evil", "Minions"]
