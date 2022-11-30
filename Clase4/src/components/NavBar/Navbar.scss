@@ -1,0 +1,25 @@
+.navbar{
+    min-height: 56px;
+    background-color: #F6D58A;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.navbar__menus{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__menu{
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 32px;
+    min-width:48px;
+}
+
+.navbar__element{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
