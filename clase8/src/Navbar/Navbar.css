@@ -1,0 +1,8 @@
+.navbar{
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+.navbar__menu{
+    margin:16px;
+}
