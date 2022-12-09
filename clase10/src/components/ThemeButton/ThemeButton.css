@@ -1,0 +1,8 @@
+.theme-mode{
+    border: 1px solid red;
+    border-radius: 8px;
+    color:brown;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
