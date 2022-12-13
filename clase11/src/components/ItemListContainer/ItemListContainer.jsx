@@ -5,35 +5,40 @@ import './ItemListContainer.css'
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const ItemListContainer = () =>{
+const ItemListContainer = ({}) =>{
     const [item,setItem] = useState(Productos);
+    const [changeModeBg,setChangeModeBg] = useState('dark')
     const { id } = useParams()
 
     const FilterCategory = new Promise((resolve,eject)=>{
        if(id){
         const newProductos = Productos.filter((p)=>p.category == id)
-        resolve(newProductos)}
-        else{
-          resolve(Productos)
-        }
+        resolve(newProductos)
+      }
+      else{
+        resolve(Productos)
+      }
 
     
     })
 
-
-
     useEffect(()=>{
       FilterCategory.then((response)=>{
          setItem(response)
+        console.log(response,item)
       })
     },[id])
+
+    const CambiarFondo =()=> setChangeModeBg('light')
+
     return(
-        <div className='itemlistcontainer'>
+        <div  className={`${changeModeBg == 'dark'? 'itemlistcontainerbgdark' : 'itemlistcontainerbglight'}` } >
           {
            item && item.map((producto)=>{
                 return <Item producto={producto} />
             })
           }
+          <button onClick={()=>CambiarFondo()}>Cambiar fondo</button>
         </div>
     )
 }
