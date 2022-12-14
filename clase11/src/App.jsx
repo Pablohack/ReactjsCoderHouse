@@ -4,6 +4,7 @@ import  NavBar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {categorias,menus} from './mock'
+import CartFinish from './components/CartFinish/CartFinish';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route exact path='/' element={<ItemListContainer bgmode="dark"/>}/>
         <Route exact path='/category/:id' element={<ItemListContainer />} />
         <Route exact path='/item/:id' element={<ItemDetailContainer />} />
+        <Route exact path='/cart' element={<CartFinish />} />
 
       </Routes>
     </BrowserRouter >
