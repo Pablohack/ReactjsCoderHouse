@@ -1,0 +1,18 @@
+.cart__count{
+    background-color: red;
+    width: 0%;
+    border-radius: 50%;
+    padding: 8px;
+    color: wheat;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 8px;
+    margin-top: 24px;
+}
+
+.shopping-cart{
+    display: flex;
+    align-items: center;
+}

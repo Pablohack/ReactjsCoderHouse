@@ -6,6 +6,7 @@ const ItemDetail =({producto})=>{
 const {addCount} = useContext(CartContext)
 
     const handlerAddCount =(count)=>{
+        console.log({paso:1,count, producto})
         addCount(count,producto[0])
     }
     return(

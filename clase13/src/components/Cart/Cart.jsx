@@ -8,12 +8,11 @@ const Cart = () => {
   const { count } = useContext(CartContext);
 
   return (
-    <div>
+    <div className="shopping-cart">
       <ShoppingCartIcon />
       <div className="cart__count">
         <p>{count}</p>
       </div>
-      <Link to="/cart"> Terminar compra</Link>
     </div>
   );
 };

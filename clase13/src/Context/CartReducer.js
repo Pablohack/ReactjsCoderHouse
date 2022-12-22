@@ -4,7 +4,7 @@ export function CartReducer(state,action){
     const listaProductos = [];
     switch (action.type) {
         case "ADD_ITEMS":
-        console.log({paso:3,state,action})
+
           if(state.producto.length > 0){
             listaProductos.push(state.producto);
             }

@@ -1,0 +1,20 @@
+.itemlistcontainer{
+    display: flex;
+    margin-top: 16px;
+
+}
+
+.itemlistcontainer__producto{
+    margin-left: 16px;
+    margin-right: 16px; 
+    margin-top: 40px;
+}
+
+.itemlistcontainerbgdark{
+    background-color: gray;
+}
+
+
+.itemlistcontainerbglight{
+    background-color: rgb(75, 14, 128);
+}

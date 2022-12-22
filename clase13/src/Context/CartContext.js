@@ -13,7 +13,6 @@ export const CartContextProvider =({children}) =>{
     const [state,dispatch] = useReducer(CartReducer,initialState)
 
     function addCount(count,producto){
-        console.log({paso:2,count,producto})
         dispatch({
             type:"ADD_ITEMS",
             payload:{count,producto}
